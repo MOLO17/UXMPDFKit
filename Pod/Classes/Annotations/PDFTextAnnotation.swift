@@ -27,7 +27,7 @@ open class PDFTextAnnotation: NSObject, NSCoding {
         }
     }
     
-    var font: UIFont = UIFont.systemFont(ofSize: 14.0) {
+    var font: UIFont = UIFont.systemFont(ofSize: 16.0) {
         didSet {
             view.font = self.font
         }
@@ -177,7 +177,7 @@ class PDFTextAnnotationView: ResizableView, PDFAnnotationView {
         }
     }
     
-    var font: UIFont = UIFont.systemFont(ofSize: 14.0) {
+    var font: UIFont = UIFont.systemFont(ofSize: 16.0) {
         didSet {
             textView.font = self.font
         }
