@@ -17,7 +17,7 @@ public protocol UXMAnnotationStoreDelegate {
 
 open class UXMAnnotationStore: NSObject, NSCoding {
 
-    var annotations: [UXMAnnotation] = []
+    private (set) open var annotations: [UXMAnnotation] = []
     var delegate: UXMAnnotationStoreDelegate?
 
 
